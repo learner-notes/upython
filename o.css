@@ -83,13 +83,17 @@ body{
 }
 #content-displayer{
   font-family: verdana;
-  line-height: 200%;
+  line-height: 150%;
   color : #0000ff;
   padding: 0.5%;
   border: solid black 0.1px;
   margin-top: 1%;
   height:100vh;
   overflow: auto;
+}
+#content-displayer > *{
+  margin-bottom: 2%;
+  text-align: justify;
 }
 #content-displayer h3{
   font-size: 100%;
