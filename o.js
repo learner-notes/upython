@@ -3,7 +3,7 @@ function display_nav() {
     document.getElementById('dropdown').style.display = "none";
   } else {
     document.getElementById('dropdown').style.display = "block";
-    document.getElementById('dropdown').innerHTML = "<a href='introduction.html'>INTRODUCTION</a><a>link 2</a><a>link 3</a><a>link 4</a>";
+    document.getElementById('dropdown').innerHTML = "<a href='introduction.html'>INTRODUCTION</a><a href='variables.html'>VARIABLES</a><a>link 3</a><a>link 4</a>";
   }
 }
 function main_block(x) {
