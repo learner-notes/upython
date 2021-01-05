@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>INPUT OUTPUT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fontweb\css\all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="o.css">
+    <script src="o.js"></script>
+  </head>
+  <body>
+    <header id="header"><i id='bar' class='fa fa-bars' onclick='display_nav()'></i><h1>UPYTHON</h1><a href='https://www.programiz.com/python-programming/online-compiler/' target='_blank'><i id='compiler' class='fab fa-python'></i></a></header>
+    <nav id="dropdown"></nav>
+    <nav id="content-changer">
+      <div class="topics-displayer" onclick="main_block(this)">OUTPUT</div>
+      <div class="topics-displayer" onclick="main_block(this)">INPUT</div>
+    </nav>
+    <section id="content-displayer"></section>
+    <section id="content-holder">
+      <section id='OUTPUT'>
+        <h3 style="text-align:center">Output</h3>
+        <h3>print()</h3>
+        <ul>
+          <li>Often while we are programming we must want to display something in the screen as an output.</li>
+          <li>this is done with the help of print().</li>
+          <li>printing an integer or float is simple, just enter the number between the paranthesis. eg: print(5) . this displays the number 5.</li>
+          <li>printing an string means as usual u should enclose the string in quotes. eg: print("india") .this would display india.
+          <li>printing a variable means u can just enter the name of the variable between paranthesis.if variable name is x , then print(x). this would print the value of x.
+          <li>printing a group of variables,values means u should print them by seperating them by ',', enclosed by paranthesis. note that comma will not be printed.</li>
+        </ul>
+        <h3>Examples</h3>
+        <ul>
+          <li>print(5.5) . Output is 5.5</li>
+          <li>print(True) . Output is True. not here true is python keyword which has boolean value True.</li>
+          <li>
+            <pre>
+x = 6
+print(x)
+print(x,5,5.5)
+            </pre>
+            output of the code will be
+            <pre style='color:#ff0000'>
+5
+6 5 5.5
+            </pre>
+            not here that comma is not printed.
+          </li>
+        </ul>
+        <h3>type()</h3>
+        <ul>
+          <li>type() gives us the type of the value or variable entered between paranthesis.</li>
+          <li>eg. type(5) returns &ltclass 'int'&gt</li>
+          <li>this is really an important function to know the type of the variable.</li>
+        </ul>
+      </section>
+      <section id="INPUT">
+        <h3 style="text-align:center">INPUT</h3>
+        <h3>input()</h3>
+        <ul>
+          <li>input() can display a number or a string on the screen and get an input from the user as string type.</li>
+          <li>for  eg:
+            <pre>
+x = input("Enter a number  :")
+print(x)
+
+output of the code will be
+
+Enter a number  :1
+1
+            </pre>
+            <li>even though u might think as u have entered a number, input() gives it to us as a string. u can use type() to check it. so it has to be converted.</li>
+          </li>
+        </ul>
+        <h3 style="text-align:center">type conversion</h3>
+        <h3>Definition</h3>
+        <ul>
+          <li>since the input returns only strings we can convert it to other by using type conversion.</li>
+          <li>for eg. if you want to convert float 5.5 to int u may use int(5.5). resulting in 5 as output</li>
+          <li>similarly float(), string() can be used.</li>
+        </ul>
+        <h3>Example</h3>
+        <ul>
+          <pre>
+x = input('Enter a number : ')
+print(x,type(x))
+x = float(x)
+print(x,type(x))
+x = int(x)
+print(x,type(x))
+
+output of the code will be , if we enter the number 2.2
+
+Enter a number : 2.2
+&ltclass 'str'&gt
+2.2 &ltclass 'float'&gt
+2 &ltclass 'int'&gt
+
+if we enter a letter say 'a' ,ten output will be
+
+Enter a number : a
+a &ltclass 'str'&gt
+Traceback (most recent call last):
+  File "&ltstring&gt", line 3, in &ltmodule&gt
+ValueError: could not convert string to float: 'a'
+
+          </pre>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>

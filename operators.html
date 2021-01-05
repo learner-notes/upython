@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>OPERATORS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fontweb\css\all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="o.css">
+    <script src="o.js"></script>
+  </head>
+  <body>
+    <header id="header"><i id='bar' class='fa fa-bars' onclick='display_nav()'></i><h1>UPYTHON</h1><a href='https://www.programiz.com/python-programming/online-compiler/' target='_blank'><i id='compiler' class='fab fa-python'></i></a></header>
+    <nav id="dropdown"></nav>
+    <nav id="content-changer">
+      <div class="topics-displayer" onclick="main_block(this)">OPERATORS</div>
+      <div class="topics-displayer" onclick="main_block(this)">COMPARISON</div>
+    </nav>
+    <section id="content-displayer"></section>
+    <section id="content-holder">
+      <section id='OPERATORS'>
+        <h3 style="text-align:center">OPERATORS</h3>
+        <ul>
+          <li>Operators are symbols that performs special operations in the language.</li>
+          <li>The basic types of operators are assignment('=', which is used to assign a value to a variable), arithmetic, relational, logical operators.</li>
+        </ul>
+        <h3>Arithmetic operators</h3>
+        <ul>
+          <li>Arithmetic operators operates on numbers used for addition, subraction, multiplication, division, power.</li>
+          <li>Arithmetic operator returns a number</li>
+          <li>addition - + - eg: 5+6 results 11</li>
+          <li>subraction - - - eg: 5-6 results -1</li>
+          <li>multiplication - * - eg: 5*6 results 30</li>
+          <li>division - / - eg: 6/6 results 1</li>
+          <li>power - ** - eg: 6**2 results 36</li>
+          <li>modulus - % - eg: 6%1 results 1 gives remainder of the division 1</li>
+        </ul>
+        <h3>Operands</h3>
+        <ul>
+          <li>operands are the entities on which operator acts.</li>
+          <li>eg: 5*6 here * is the operator 5,6 operands.</li>
+        </ul>
+        <h3>Order of precedence</h3>
+        <ul>
+          <li>The order of evaluation of the operators, depends on the rules of precedence,<br>
+            paranthesis (),<br>
+            exponentation **,<br>
+            multiplication and division *,\,<br>
+            addition and subraction +,-,<br>
+            relational operators,<br>
+            logical operators,<br>
+            assignment operator.<br>
+          </li>
+          <li>operators with same precedence are evaluated from left to right.</li>
+          <li>When in doubt, always put parentheses in your expressions to make sure the computations are performed in the order you intend.</li>
+        </ul>
+      </section>
+      <section id="COMPARISON">
+        <h3>Relational operators or boolean</h3>
+        <ul>
+          <li>relational operators are used to compare two values of similar types, (mostly) and returns either true or false based on the result of the comparison.</li>
+          <li>lets assume two variables x,y with some values strings or numbers.</li>
+          <li>
+            == - compare equality - eg: x==y,<br>
+            != - not equal - eg: x!=y,<br>
+            &gt - greater - eg: x&gty ,<br>
+            &lt - lesser - eg: x&lty,<br>
+            &gt= - greater than or equal - eg: x&gt=y,<br>
+            &lt= - lesser than or equal - eg: x&lt=y,<br>
+            is - the same - eg: x is y,<br>
+            is not - not the same - eg: x is not y,<br>
+          </li>
+          <li>Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols for the same operations. A common error is to use a single equal sign (=) instead of a double equal sign (==). Remember that = is an assignment operator and == is a comparison operator.</li>
+          <li>Examples:<br>
+            print( 5==5 )<br>
+            print( 8&lt2 )<br>
+            print( 'a'!='a' )<br>
+            print( '1' == 1 )<br>
+            print( 1 &gt '1' )<br>
+            <br>
+            the output of the code will be,<br>
+            <br>
+            True<br>
+            False<br>
+            False<br>
+            False<br>
+            Traceback (most recent call last):<br>
+              File "&ltstring&gt", line 5, in &ltmodule&gt<br>
+            TypeError: '&gt' not supported between instances of 'int' and 'str'<br>
+          </li>
+        </ul>
+        <h3>Logical operators</h3>
+        <ul>
+          <li>Logical operators are used to combine the result of the relational expressions.</li>
+          <li>and - returns true if and only if all the inputs are true.</li>
+          <li>or - returns true if one of the inputs is true</li>
+          <li>not - inverses true or false</li>
+          <li>Example:<br>
+            print( 5==1 and 5==5 )<br>
+            print( 5==1 or 5==5 )<br>
+            print( not 5==1 and 5==5 )<br>
+            <br>
+            the output of the code :<br>
+            <br>
+            False<br>
+            True<br>
+            True<br>
+          </li>
+        </ul>
+
+      </section>
+    </section>
+  </body>
+</html>
